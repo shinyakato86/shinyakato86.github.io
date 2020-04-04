@@ -28,7 +28,7 @@
           <a href="https://github.com/shinyakato86" class="contactArea_link" target="blank" rel="noopener"><img src="../static/git.png" alt=""></a>
         </div>
         <div class="contactArea_item">
-          <a href="https://twitter.com/shinya_086" class="contactArea_link" target="blank" rel="noopener"><img src="../static/twitter.png" alt=""></a>
+          <a href="https://qiita.com/shinyakato86" class="contactArea_link" target="blank" rel="noopener"><img src="../static/qiita.png" alt=""></a>
         </div>
         <div class="contactArea_item">
           <a href="https://www.instagram.com/shinya_kato86" class="contactArea_link" target="blank" rel="noopener"><img src="../static/insta.png" alt=""></a>

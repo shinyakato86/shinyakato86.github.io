@@ -48,12 +48,14 @@
               <li class="block01List_list"><p class="block01_title">jQuery</p>
                 <p class="block01_text">スライドショー、トグルメニュー、モーダル、タブ切り替え等の実装のために実務で使用。</p></li>
               <li class="block01List_list"><p class="block01_title">JavaScript</p>
-                <p class="block01_text">jQueryと合わせて実務で使用。個人的にもゲームを作成したりして日々勉強中。</p></li>
+                <p class="block01_text">jQueryと合わせて実務で使用。</p></li>
+                <li class="block01List_list"><p class="block01_title">PHP/laravel</p>
+                <p class="block01_text">バックエンドの部分に携わっていきたいと思い、独学で勉強中。laravelを使用したサービスを作成しました。</p></li>
+                <li class="block01List_list">
+                <p class="block01_title">Vue.js</p>
+                <p class="block01_text">このポートフォリオを作るために使用しました、独学で勉強。</p></li>
               <li class="block01List_list"><p class="block01_title">Git</p>
                 <p class="block01_text">Soucetreeを使用してのバージョン管理を実務で経験。</p></li>
-              <li class="block01List_list">
-                <p class="block01_title">Vue.js</p>
-                <p class="block01_text">このポートフォリオを作るために使用しました、勉強中。</p></li>
               <li class="block01List_list"><p class="block01_title">Adobe</p>
                   <ul class="list-style01 mt10">
                     <li>Illustrator CC</li>

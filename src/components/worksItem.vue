@@ -26,12 +26,49 @@
       <p class="mb60">実務で作成したものについては、職務経歴書に記載させていただいております。</p>
       <div class="block03">
         <div class="block03_img">
-          <a href="https://shinyakato86.github.io/janken/" target="blank" rel="noopener" class="block03_link"><img src="../static/portfolio.png" alt=""></a>
+          <a href="https://github.com/shinyakato86/shinyakato86.github.io" target="blank" rel="noopener" class="block03_link"><img src="../static/portfolio.png" alt=""></a>
         </div>
         <div class="block03_text">
           <p class="block03_title">SHINYA KATO / PORTFOLIO</p>
           <p class="block03_sub">Sass / JavaScript / Vue.js</p>
-          <p>現在ご覧のこのポートフォリオです。</p>
+          <p>現在ご覧のこのポートフォリオです。<br>
+          Vue.jsを使用して作成しました。</p>
+        </div>
+      </div>
+        <div class="block03">
+        <div class="block03_img">
+          <a href="http://mureview.herokuapp.com/top" target="blank" rel="noopener" class="block03_link"><img src="../static/mureview.jpg" alt=""></a>
+        </div>
+        <div class="block03_text">
+          <p class="block03_title">音楽レビュー投稿サイト「ミューレビュ」</p>
+          <p class="block03_sub">PHP / MySQL / laravel / Sass / Bootstrap / Heroku</p>
+          <p>laravelを使用して作成した音楽のレビューを投稿できるサービスです。<br>
+          ログイン機能・投稿編集機能・検索機能を実装しました。<br>
+          MAMPのローカル環境で作成し、Herokuへデプロイ。<br>
+          <a href="https://qiita.com/shinyakato86/items/3e559c67802910bfa971" class="block03_link02">qiitaの詳細ページへ</a></p>
+        </div>
+      </div>
+        <div class="block03">
+        <div class="block03_img">
+          <a href="http://lara-ec.herokuapp.com/" target="blank" rel="noopener" class="block03_link"><img src="../static/lara-ec.png" alt=""></a>
+        </div>
+        <div class="block03_text">
+          <p class="block03_title">ECサイト「laraEc」</p>
+          <p class="block03_sub">PHP / MySQL / laravel / Sass / Bootstrap / Heroku</p>
+          <p>laravelを使用して作成したECショップです。<br>
+          ログイン機能・商品カート機能を実装しました。<br>
+          MAMPのローカル環境で作成し、Herokuへデプロイ。<br>
+          <a href="https://qiita.com/shinyakato86/items/24dbddcc3eea88eb9447" class="block03_link02">qiitaの詳細ページへ</a></p>
+        </div>
+      </div>
+        <div class="block03">
+        <div class="block03_img">
+          <a href="http://shinyakato.php.xdomain.jp/single_bbs/" target="blank" rel="noopener" class="block03_link"><img src="../static/single_bbs.png" alt=""></a>
+        </div>
+        <div class="block03_text">
+          <p class="block03_title">ひとこと掲示板</p>
+          <p class="block03_sub">PHP / MySQL / Bootstrap</p>
+          <p>PHPとMySQLで作成したひとこと掲示板です。</p>
         </div>
       </div>
         <div class="block03">
@@ -123,5 +160,12 @@ export default {
 }
 .block03_link {
   display: block;
+}
+.block03_link02 {
+  color: #1a0dab;
+  text-decoration: underline;
+  &:hover {
+    color: #0066c0;
+  }
 }
 </style>
