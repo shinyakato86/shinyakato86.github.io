@@ -30,18 +30,44 @@
         </div>
         <div class="block03_text">
           <p class="block03_title">SHINYA KATO / PORTFOLIO</p>
-          <p class="block03_sub">Sass / JavaScript / Vue.js</p>
+          <p class="block03_sub">Vue.js / JavaScript / Sass</p>
           <p>現在ご覧のこのポートフォリオです。<br>
           Vue.jsを使用して作成しました。</p>
         </div>
-      </div>
+        </div>
+        <div class="block03">
+        <div class="block03_img">
+          <a href="http://projectlist-lara.herokuapp.com/" target="blank" rel="noopener" class="block03_link"><img src="../static/projectlist.png" alt=""></a>
+        </div>
+        <div class="block03_text">
+          <p class="block03_title">受注案件登録システム</p>
+          <p class="block03_sub">laravel / PHP / MySQL / Sass / Heroku / Bootstrap</p>
+          <p>Web製作会社での社内案件管理を目的とした架空のシステムです。<br>
+          担当者別に売上を管理し、期間ごとの売上合計を閲覧する機能を実装しました。<br>
+          MAMPのローカル環境で作成し、Herokuへデプロイ。<br>
+          <a href="https://qiita.com/shinyakato86/items/f875bfa031ffc21f8ef0" class="block03_link02">qiitaの詳細ページへ</a></p>
+        </div>
+        </div>
+        <div class="block03">
+        <div class="block03_img">
+          <a href="http://lara-ec.herokuapp.com/" target="blank" rel="noopener" class="block03_link"><img src="../static/lara-ec.png" alt=""></a>
+        </div>
+        <div class="block03_text">
+          <p class="block03_title">ECサイト「laraEc」</p>
+          <p class="block03_sub">laravel / PHP / MySQL / Sass / Heroku / Bootstrap</p>
+          <p>laravelを使用して作成したECショップです。<br>
+          ログイン機能・商品カート機能を実装しました。<br>
+          MAMPのローカル環境で作成し、Herokuへデプロイ。<br>
+          <a href="https://qiita.com/shinyakato86/items/24dbddcc3eea88eb9447" class="block03_link02">qiitaの詳細ページへ</a></p>
+        </div>
+        </div>
         <div class="block03">
         <div class="block03_img">
           <a href="http://mureview.herokuapp.com/top" target="blank" rel="noopener" class="block03_link"><img src="../static/mureview.jpg" alt=""></a>
         </div>
         <div class="block03_text">
           <p class="block03_title">音楽レビュー投稿サイト「ミューレビュ」</p>
-          <p class="block03_sub">PHP / MySQL / laravel / Sass / Bootstrap / Heroku</p>
+          <p class="block03_sub">laravel / PHP / MySQL / Sass / Heroku / Bootstrap</p>
           <p>laravelを使用して作成した音楽のレビューを投稿できるサービスです。<br>
           ログイン機能・投稿編集機能・検索機能を実装しました。<br>
           MAMPのローカル環境で作成し、Herokuへデプロイ。<br>
@@ -49,18 +75,15 @@
         </div>
       </div>
         <div class="block03">
-        <div class="block03_img">
-          <a href="http://lara-ec.herokuapp.com/" target="blank" rel="noopener" class="block03_link"><img src="../static/lara-ec.png" alt=""></a>
+          <div class="block03_img">
+            <a href="http://shinyakato.php.xdomain.jp/memo_app/" target="blank" rel="noopener" class="block03_link"><img src="../static/memo_app.png" alt=""></a>
+          </div>
+          <div class="block03_text">
+            <p class="block03_title">メモアプリ</p>
+            <p class="block03_sub">PHP / MySQL / Bootstrap</p>
+            <p>PHPとMySQLで作成したログイン機能付きメモ管理アプリです。</p>
+          </div>
         </div>
-        <div class="block03_text">
-          <p class="block03_title">ECサイト「laraEc」</p>
-          <p class="block03_sub">PHP / MySQL / laravel / Sass / Bootstrap / Heroku</p>
-          <p>laravelを使用して作成したECショップです。<br>
-          ログイン機能・商品カート機能を実装しました。<br>
-          MAMPのローカル環境で作成し、Herokuへデプロイ。<br>
-          <a href="https://qiita.com/shinyakato86/items/24dbddcc3eea88eb9447" class="block03_link02">qiitaの詳細ページへ</a></p>
-        </div>
-      </div>
         <div class="block03">
         <div class="block03_img">
           <a href="http://shinyakato.php.xdomain.jp/single_bbs/" target="blank" rel="noopener" class="block03_link"><img src="../static/single_bbs.png" alt=""></a>
@@ -69,36 +92,6 @@
           <p class="block03_title">ひとこと掲示板</p>
           <p class="block03_sub">PHP / MySQL / Bootstrap</p>
           <p>PHPとMySQLで作成したひとこと掲示板です。</p>
-        </div>
-      </div>
-        <div class="block03">
-          <div class="block03_img">
-            <a href="https://shinyakato86.github.io/tips/" target="blank" rel="noopener" class="block03_link"><img src="../static/tips.png" alt=""></a>
-          </div>
-        <div class="block03_text">
-          <p class="block03_title">Tips</p>
-          <p class="block03_sub">Sass / jQuery / JavaScript</p>
-          <p>制作でよく使うスタイルや情報を個人的にまとめています。</p>
-        </div>
-      </div>
-      <div class="block03">
-        <div class="block03_img">
-          <a href="https://shinyakato86.github.io/janken/" target="blank" rel="noopener" class="block03_link"><img src="../static/janken.png" alt=""></a>
-        </div>
-        <div class="block03_text">
-          <p class="block03_title">じゃんけんゲーム</p>
-          <p class="block03_sub">Bootstrap / JavaScript</p>
-          <p>JavaScriptの勉強のために作成したじゃんけんゲームです。</p>
-        </div>
-      </div>
-      <div class="block03">
-        <div class="block03_img">
-          <a href="https://shinyakato86.github.io/todolist/" target="blank" rel="noopener" class="block03_link"><img src="../static/todo.png" alt=""></a>
-        </div>
-        <div class="block03_text">
-          <p class="block03_title">Todo List</p>
-          <p class="block03_sub">Bootstrap / JavaScript</p>
-          <p>JavaScriptの勉強のために作成したTodo Listです。</p>
         </div>
       </div>
   </section>
@@ -131,6 +124,7 @@ export default {
 .block03_img {
   width: calc(50% - 20px);
   outline: 1px solid #c6c6c6;
+  transition: .2s;
   @include mq(s) {
     width: 100%;
   }

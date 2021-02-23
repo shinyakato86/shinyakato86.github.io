@@ -29,9 +29,9 @@
               <p class="profileBox_img"><img src="../static/profile.jpg" alt=""></p>
               <div class="prfileBox_text">
                 <p class="prfileBox_title">Shinya Kato</p>
-                <p>大学卒業後、新卒で物流管理の仕事に就く。<br>
-                2018年8月より半年間Webデザインの職業訓練を受講し、Web制作会社に転職。<br>
-                マークアップエンジニアとして業務を行う。</p>
+                <p>2018年8月より半年間Webデザインの職業訓練を受講し、Web制作会社に転職。<br>
+                マークアップエンジニアとして業務を行う。<br>
+                その後、フロントエンドよりもバックエンド側の仕事がしたいと思い、PHP/laravel・AWS等の勉強をしています。</p>
               </div>
             </div>
           </div>
@@ -43,6 +43,9 @@
             <ul class="block01List">
               <li class="block01List_list"><p class="block01_title">PHP/laravel</p>
               <p class="block01_text">バックエンドの部分に携わっていきたいと思い、独学で勉強中。laravelを使用したポートフォリオを複数作成しました。</p></li>
+              <li class="block01List_list">
+              <p class="block01_title">AWS</p>
+              <p class="block01_text">クラウドプラクティショナーを取得。引き続き、上位資格取得に向け勉強中。</p></li>
               <li class="block01List_list">
               <p class="block01_title">Vue.js</p>
               <p class="block01_text">このポートフォリオを作るために使用しました、独学で勉強。</p></li>
