@@ -1,0 +1,103 @@
+@mixin clearfix {
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin mq($bp) {
+    @media #{map-get($breakpoint, $bp)} {
+        @content;
+    }
+}
+
+@mixin width-base($isBig:false, $isSmall:false) {
+	width: $width_base;
+	max-width: if($isBig, $width_max-l, if($isSmall, $width_max-s, $width_max));
+	margin: 0 auto;
+}
+
+@mixin currentNav ($bodyID) {
+	##{$bodyID} & {
+		@include navActive;
+	}
+}
+
+@mixin navActive {
+	position: relative;
+	&::after {
+		position: absolute;
+		content: '';
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		height: 3px;
+		background: $color-main;
+	}
+	@include mq(m) {
+		bottom: 0;
+	}
+	@include mq(s) {
+		&::after {
+			display: none;
+		}
+	}
+}
+
+@mixin linkText($hoverTarget:null) {
+	color: $color_link;
+	text-decoration: underline;
+	@include hoverText($hoverTarget);
+}
+
+@mixin hoverText($hoverTarget:null) {
+	// hover対象の指定があればそれに、なければ自分自身のhoverにスタイル設定
+	$selector: if($hoverTarget, "#{$hoverTarget}:hover &", "&:hover");
+	#{$selector} {
+		color: $color_link-hover;
+		text-decoration: none;
+	}
+}
+
+@mixin hoverLine($bottom: 0, $color: $color_main) {
+	&::after {
+		content: '';
+		width: 0;
+		left: 50%;
+		bottom: $bottom;
+		height: 3px;
+		background: $color;
+		position: absolute;
+		transition: .3s;
+	}
+	&:hover {
+		&::after {
+			width: 100%;
+			left: 0;
+		}
+	}
+	@include mq(m) {
+		&:hover {
+			&::after {
+				content: none;
+			}
+		}
+	}
+}
+
+@mixin arrowHeaderNav {
+	position: relative;
+	&::before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 20px;
+		left: $gutter-sp;
+		width: 8px;
+		height: 8px;
+		border-top: solid 1px $color_main;
+		border-right: solid 1px $color_main;
+		transform: map-get($drct-arrow, right);
+	}
+}
