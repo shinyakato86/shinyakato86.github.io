@@ -1,0 +1,304 @@
+/* ===========================================================================
+  util
+============================================================================= */
+/*  margin
+------------------------------------ */
+@for $value from 0 through 10 {
+	.mt#{$value * 10} {
+		margin-top: 10px * $value !important;
+	}
+	.mr#{$value * 10} {
+		margin-right: 10px * $value !important;
+	}
+	.mb#{$value * 10} {
+		margin-bottom: 10px * $value !important;
+	}
+	.ml#{$value * 10} {
+		margin-left: 10px * $value !important;
+	}
+	@include mq(s){
+		.mt#{$value * 10} {
+			margin-top: 5px * $value !important;
+		}
+		.mr#{$value * 10} {
+			margin-right: 5px * $value !important;
+		}
+		.mb#{$value * 10} {
+			margin-bottom: 5px * $value !important;
+		}
+		.ml#{$value * 10} {
+			margin-left: 5px * $value !important;
+		}
+	}
+}
+
+/* ===========================================================================
+  contents
+============================================================================= */
+.contents {
+	padding-bottom: 100px;
+	width: $width_base;
+	max-width: $width_max;
+	margin: 0 auto;
+	@include mq(s) {
+		padding-bottom: 60px;
+	}
+  }
+
+/* ===========================================================================
+  mv
+============================================================================= */
+  .mv {
+	width: 100%;
+	height: 100vh;
+	background: radial-gradient(circle, rgba(255, 255, 255, 0) 60%, white 110%), transparent;
+  }
+
+/* ===========================================================================
+  heading
+============================================================================= */
+  .heading02 {
+	font-size: 5.4rem;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+	text-align: center;
+	animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-name: fadeIn;
+	visibility: visible;
+  }
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+	}
+  .heading03 {
+	font-size: 2rem;
+	padding-left: 10px;
+	position: relative;
+	&::before {
+	  position: absolute;
+	  background-color: #02a388;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 3px;
+	  content: '';
+	}
+  }
+
+/* ===========================================================================
+  block01
+============================================================================= */
+  .block01 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@include mq(s) {
+		display: block;
+	}
+  }
+  .block01List_list {
+	  margin-top: 5px;
+	  & + & {
+		margin-top: 30px;
+	  }
+  }
+  .block01_title {
+	font-size: 1.6rem;
+  }
+  .block01_item {
+	width: calc(40% - 20px);
+	@include mq(s) {
+		width: 100%;
+	}
+  }
+  .block01_item-02 {
+	width: 60%;
+	@include mq(s) {
+		width: 100%;
+	}
+  }
+  .block01_text {
+	color: #666;
+	margin-top: 10px;
+  }
+
+/* ===========================================================================
+  block02
+============================================================================= */
+  .block02 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@include mq(s) {
+		margin-top: 30px;;
+	}
+  }
+  .block02_item {
+	width: calc(30% - 20px);
+  }
+  .block02_item-02 {
+	width: 70%;
+  }
+
+/* ===========================================================================
+  list
+============================================================================= */
+  .list-style01 {
+	margin-top: 10px;
+	margin-left: 1.5rem;
+	list-style: disc;
+	color: #666;
+  }
+
+/* ===========================================================================
+  particles
+============================================================================= */
+  .particles {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 0;
+  }
+
+/* ===========================================================================
+  scrollBtn
+============================================================================= */
+  .scrollBtn {
+	padding-top: 70px;
+	color: #333;
+	font-size: 2rem;
+	position: relative;
+  }
+  .scrollBtn_link {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #333;
+	border-bottom: 1px solid #333;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	animation: scrollBtn 1.5s infinite;
+	box-sizing: border-box;
+  }
+  @keyframes scrollBtn {
+	0% {
+	  transform: rotate(-45deg) translate(0, 0);
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  transform: rotate(-45deg) translate(-20px, 20px);
+	  opacity: 0;
+	}
+  }
+
+/* ===========================================================================
+  section
+============================================================================= */
+  #section {
+	padding-top: 61px;
+  	@include mq(s) {
+		padding-top: 46px;
+	}
+  }
+
+/* ===========================================================================
+  btnwrap
+============================================================================= */
+  .btnwrap {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 60px;
+	text-align: center;
+  }
+
+/* ===========================================================================
+  headerSpMenuBtn
+============================================================================= */
+.headerSpMenuBtn {
+	display: none;
+	@include mq(s) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70px;
+		color: $color_font;
+		text-align: center;
+		padding: 10px 0;
+		transition: background-color .4s;
+		margin-left: auto;
+		z-index: 1;
+		&::after {
+			content: 'MENU';
+			display: block;
+			font-size: 1.0rem;
+		}
+		&.is-active {
+			&::after {
+				content: 'CLOSE';
+			}
+		}
+	}
+}
+.headerSpMenuBtn_lines {
+	@include mq(s) {
+		display: inline-block;
+		width: 27px;
+		height: 18px;
+		position: relative;
+		background: none;
+		&:focus {
+			outline: 0;
+		}
+	}
+}
+.headerSpMenuBtn_line {
+	@include mq(s) {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		border-radius: 2px;
+		background-color: $color_font;
+		transition: transform .4s;
+		&:nth-of-type(1) {
+			top: 0;
+		}
+		&:nth-of-type(2) {
+			top: 8px;
+		}
+		&:nth-of-type(3) {
+			bottom: 0;
+		}
+		.headerSpMenuBtn.is-active & {
+			&:nth-of-type(1) {
+				transform: translateY(8px) rotate(-45deg);
+			}
+			&:nth-of-type(2) {
+				opacity: 0;
+			}
+			&:nth-of-type(3) {
+				transform: translateY(-8px) rotate(45deg);
+			}
+		}
+	}
+}
